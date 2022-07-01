@@ -278,15 +278,25 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     padding-bottom: 94px;
 }
 
+.workers .list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .workers-image {
     display: block;
 }
 
 .workers .item { 
+    
     width: 270px;
     height: 368px;
     background-color: var(--primary-white-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .workers-name {
@@ -458,6 +468,12 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
 .portfolio-item {
     width: 370px;
     height: 404px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-img {
