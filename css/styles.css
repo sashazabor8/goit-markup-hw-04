@@ -154,7 +154,7 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
 /* ================= Герой ================= */
 
 .hero {
-    background-color: var(--bacground-black-color);
+    background-color: #C4C4C4;
     text-align: center;
 }
 
