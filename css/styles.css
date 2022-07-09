@@ -113,7 +113,7 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     align-items: center;
 }
 
-.icon {
+/* .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,8 +121,13 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     height: 80px;
     margin-right: 10px;
   
-}
+} */
 
+/* это дописал------------------------------------- */
+.contacts-list-icon {
+    margin-right: 10px;
+}
+/* это дописал------------------------------------- */
 
 .nav-list { 
     display: flex;
@@ -146,15 +151,15 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     color: var(--accent-color);
 }
 
-.contacts-list {
+.contacts-list { 
     display: flex;
     margin-left: auto;
-    justify-content: center;
+     justify-content: center; 
     align-items: center;
 }
 
-.site-nav .link,
-.contacts-list .link{
+.site-nav .link, .contacts-list .link 
+{
    
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
@@ -164,13 +169,22 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     letter-spacing: 0.02em;
 }
 
-.contacts-list li {
-    display: flex;
-    
-    
-    align-items: center;
-    padding: 32px 0;
+/* это дописал------------------------------------- */
+.contacts-list .link {
+    color: #757575;;
 }
+.contacts-list-icon {
+    fill: #757575;
+}
+/* это дописал------------------------------------- */
+
+/* .contacts-list li {
+    display: flex; */
+    
+    
+    /* align-items: center; */
+    /* padding: 32px 0; */
+/* } */
 
 
 
@@ -178,23 +192,21 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
 .nav-list .link,
 .contacts-list .link
  {
-   
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.contacts-list li { 
+/* .contacts-list li { 
     display: flex;
 
-}
+} */
 
-
-.contacts-list a:hover,
-.contacts-list a:focus {
+/* это дописал          поменял селектор убрал дублирующий ховер по цвету текста------------------------------------ */
+.contacts-list .link:hover .contacts-list-icon,
+.contacts-list .link:focus .contacts-list-icon {
     fill: var(--accent-color);
-    color: var(--accent-color);
 }
-
+/* это дописал------------------------------------- */
 .site-header .link:hover,
 .site-header .link:focus {
     color: var(--accent-color);
@@ -470,13 +482,18 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     justify-content: space-between;
 }
 
-
-
+/* ЛИбо то лтбо то_________________________________!!!!!!!!!!!!! */
+/* 
 .clients-item:not(:last-child) {
     margin-right: 30px;
+} */
+
+.clients-list .link {
+    display: block;
+    width: 170px;
+        height: 92px;
+    
 }
-
-
 
 
 .clients-icon {
@@ -491,11 +508,13 @@ h1,h2,h3,h4,h5,h6, ul, li, button, p {
     fill: #AFB1B8;
 }
 
-.clients-icon:hover {
+/* Поменял селектор на "при ховере на ссылку для иконки */
+
+.clients-list .link:hover .clients-icon, 
+.clients-list .link:focus .clients-icon{
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
-
 
 
 
